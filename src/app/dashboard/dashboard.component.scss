@@ -394,10 +394,16 @@ input[type="text"] {
     font-weight: 400 !important;
     font-size: 30px !important;
 }
+.hero_btn :hover{
+    background-image: linear-gradient( 10deg, #29D5D9, #5C83FA , #7361EC , #484B6D) 20;
+}
 // for mobile
 @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
     .header_conatiner{
         padding: 1rem !important;
+    }
+    .hero_section{
+        background-image:linear-gradient(black ,transparent) !important ;
     }
     .mobile_layout{
         visibility: visible;
@@ -435,7 +441,7 @@ input[type="text"] {
         padding: 0rem !important;
     }
     .Problem_container label{
-        font-size: 2.5rem !important;
+        font-size: 30px !important;
     }
     .Problem_container-1 p{
         width: 100% !important;
@@ -460,6 +466,9 @@ input[type="text"] {
         text-align: center !important;
         margin-bottom: 14px !important;
     }
+    .proto_img p{
+        font-size: 14px !important;
+    }
     .card-4{
         max-width: 84% !important;
     }
@@ -470,5 +479,24 @@ input[type="text"] {
     .card-4_container-txt{
         font-size: 20px !important;
     }
+    .circle:before {
+        height: 87% !important;
+        top: 72% !important;
+    }
+    .card-text{
+        font-size: 14px !important;
+        line-height: 20px !important;
+    }
+    .card-header label{
+        font-size: 18px !important;
+    }
+    .card-4_container-txt p {
+        font-size: 16px !important;
+        line-height: 28px !important;
+    }
+    .card-2 label{
+        font-size: 18px !important;
+    }
+
 }
 
