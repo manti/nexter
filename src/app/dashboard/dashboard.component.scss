@@ -4,18 +4,20 @@
 
 * {
     box-sizing: border-box;
+    font-family: 'Recoleta' !important;
 }
 
 .hero_section {
-    background: radial-gradient(#186B78 -27%, #1B234B 33%, #040217, transparent 205%);
+    background-image: radial-gradient(28% 81% at 48% 43%, #186B78 -37%, #1B234B 59%, #040217 183%, transparent 255%);
     color: #FFFFFF;
+    background-color: black;
 }
 
 .hero_logo {
     width: 50% !important;
     vertical-align: middle;
-    font-size: 26px !important;
-    font-weight: 900;
+    font-size: 32px !important;
+    font-weight: bolder !important;
 }
 
 .hero_logo img {
@@ -29,11 +31,13 @@
 .hero_text {
     width: 50% !important;
     text-align: end;
+    font-family: 'Oldschool Grotesk' !important;
+
 }
 
 .hero_text label {
-    padding-right: 4rem !important;
-    font-weight: 500 !important;
+    padding-right: 16px !important;
+    font-weight: 600 !important;
 }
 
 .header_conatiner {
@@ -49,7 +53,7 @@
 }
 
 .hero_container-txt {
-    width: 50% !important;
+    width: 39% !important;
     display: grid !important;
     align-items: center !important;
 
@@ -60,25 +64,38 @@
 }
 
 .container_txt {
-    font-size: 6rem !important;
+    font-size: 96px !important;
+    line-height: 104px;
+    
+    
 }
 
 .container_txt-1 {
-    color: #CBD3DF;
+    color:rgba(203, 211, 223, 0.80);;
     width: 75% !important;
+    font-size: 20px !important;
+    
 }
 
 .hero_btn {
     width: 24% !important;
     padding: 10px !important;
-    border-radius: 10px !important;
-    border-image: linear-gradient(150deg, #29D5D9 16%, #5C83FA 20%, #7361EC 10%, #484B6D) 20;
+    border-radius: 12px !important;
+    border-image: linear-gradient( 10deg, #29D5D9, #5C83FA , #7361EC , #484B6D) 20;
     background-color: #0F0B2B;
     color: #ffffff;
+    animation: borderblueanim 2s infinite;
 }
-
+@keyframes borderblueanim {
+    from {
+      stroke-dashoffset: 800;
+    }
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
 .hero_container-img {
-    width: 50% !important;
+    width: 60% !important;
     text-align: end !important;
 }
 
@@ -92,8 +109,8 @@
 
 .txt {
     padding-bottom: 10px;
-    font-size: 16px !important;
-    font-weight: 500;
+    font-size: 20px !important;
+    font-weight: 400;
 }
 
 .logo {
@@ -106,9 +123,8 @@
 }
 
 .Problem_container label {
-    padding-bottom: 0.8rem !important;
-    font-size: 4rem !important;
-    font-weight: 300 !important;
+    font-size: 65px !important;
+    font-weight: 400 !important;
 
 }
 
@@ -121,12 +137,14 @@
 }
 
 .Problem_container-1 p {
-    width: 50% !important;
+    width: 38% !important;
     color: #95A1B4;
+    font-weight: 400 !important;
+    font-size: 17px !important;
+    line-height:25px !important;
 }
 
 .card {
-    border-radius: 10px !important;
     height: auto !important;
     margin-right: 14px !important;
 }
@@ -141,7 +159,7 @@
 }
 
 .prb_head-conatiner {
-    background: linear-gradient(115deg, #08041B 12%, #132E48 52%, #08041B, transparent 150%);
+    background: linear-gradient(90deg, #08041B -7%, #132E48 50%, #08041B, transparent 150%);
     color: white;
 }
 
@@ -176,29 +194,42 @@
 }
 
 .card-1 {
-    max-width: 25%;
+    max-width: 20%;
     flex-basis: 33.333%;
     flex-grow: 0;
     flex-shrink: 0;
     border-color: red;
     background-image: linear-gradient(-2deg, #B7444D -41%, #1B1E29);
-
+    border-top-right-radius: 14px !important;
+    border-top-left-radius: 14px !important;
 
 }
 
 .card-text {
-    font-size: 85%;
+    font-family: "Inter", sans-serif !important;
+    font-size: 18px !important;
+    font-weight: 400 !important;
 }
 
 .card-body {
     display: flex !important;
     align-items: center !important;
     color: white !important;
+    padding: 6px 10px !important;
 }
 
 .card-header {
     background-color: #B7444D;
     color: #FFFFFF;
+    border-top-right-radius: 14px !important;
+    border-top-left-radius: 14px !important;
+
+}
+.card-header label{
+    font-family: "Inter", sans-serif !important;
+    color: #EBF7FD;
+    font-size: 24px !important;
+    font-weight: 500 !important;
 }
 
 .rows::-webkit-scrollbar {
@@ -214,20 +245,27 @@
 }
 
 .card-2 svg {
-    width: 100%;
+    width: 50%;
     text-align: center;
-    padding: 4rem;
-    height: 70%;
+    padding: 1.8rem;
+    height: auto;
+    margin-left:  5rem;
 }
 
 .card-2 label {
     color: #ffffff;
     margin-left: 14px !important;
     font-size: 24px;
+    font-weight: 400;
+    
 }
 
 .card_text-2 {
-    color: #CBD3DF;
+    color: #F6F6F4A3;
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    font-family: "Inter", sans-serif !important;
+    line-height: 32px !important;
 }
 
 .circle {
@@ -238,23 +276,24 @@
 .circle:before {
     content: "";
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 141%;
+    height: 228%;
     border-radius: 74%;
-    box-shadow: 0px 35px 356px 140px #233D80;
-    top: 50%;
+    box-shadow: 24px -26px 295px -6px #254486;
+    top: 58%;
+    left: -21%;
+    background-color: #0D0E16;
 }
 
 .card-3 {
-    border: 1px solid gray;
-    max-width: 17%;
+    max-width: 9%;
     max-height: 50%;
-    background-color: transparent;
+    border: 0.8px solid black;
 
 }
 
 .hr_line {
-    margin: 0rem 7rem;
+    margin: 0rem 2rem;
     background-image: linear-gradient(to right, #448AFF, #448AFF, #12E6C8, #12E6C8);
     border: none;
 }
@@ -265,7 +304,7 @@
 }
 
 .card-title-3 .card-title {
-    font-size: 64px;
+    font-size: 40px;
 }
 
 .card_text-3 {
@@ -273,6 +312,7 @@
     text-align: center;
     color: #A7ABB9;
     font-size: 24px;
+    font-family: 'Oldschool Grotesk' !important;
 
 }
 
@@ -341,7 +381,18 @@ input[type="text"] {
     display: block;
 }
 .sln_conatiner{
-    margin-left: 6rem; padding: 10px 0px;justify-content: center;
+     justify-content: center;
+     padding: 10px 0px !important;
+}
+.eco_sys{
+    --bs-gutter-x: 0;
+    text-align: center;
+    align-items: center;
+    padding: 12px;
+}
+.proto_img{
+    font-weight: 400 !important;
+    font-size: 30px !important;
 }
 // for mobile
 @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
